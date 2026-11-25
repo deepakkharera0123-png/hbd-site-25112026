@@ -1,0 +1,282 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy birthday to my sweetie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+     <div id="birthdayContent" class="hidden"></div>
+    <main>
+       
+     <div class="lock-screen" id="lockScreen">
+
+    <div class="lock-card">
+
+        <div class="lock-heart">♡</div>
+
+        <h2>A little website</h2>
+
+        
+
+        <div class="pin-dots" id="pinDots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <small>ENTER YOUR SECRET CODE</small>
+
+        <div class="keypad">
+
+            <button class="key" data-number="1">1</button>
+            <button class="key" data-number="2">2</button>
+            <button class="key" data-number="3">3</button>
+
+            <button class="key" data-number="4">4</button>
+            <button class="key" data-number="5">5</button>
+            <button class="key" data-number="6">6</button>
+
+            <button class="key" data-number="7">7</button>
+            <button class="key" data-number="8">8</button>
+            <button class="key" data-number="9">9</button>
+
+            <button class="key action" id="deletePin">⌫</button>
+            <button class="key" data-number="0">0</button>
+            <button class="key action" id="submitPin">✓</button>
+
+        </div>
+
+        <p id="pinMessage">Made with love, just for you ♡</p>
+
+    </div>
+
+</div>
+        <div class="birthday-card">
+            <h1 class="mainh1">happpyyyy birthday sweetheart<span class="mainspan">💗 </span></h1>
+            <img src="WhatsApp Image 2026-11-20 at 23.31.04.jpeg" alt="gif">
+
+           <div class="button-container">
+
+    <button class="yes-btn">clickk here 😋</button>
+
+    <button class="no-btn">noo 🥺</button>
+
+</div>
+            <div class="heart-container"></div>
+        </div>
+        
+<section id="balloonScreen" class="balloon-screen hidden">
+
+    <div class="balloon-heading">
+        <span>✦ A LITTLE thing ✦</span>
+        <h2>Pop the balloons!</h2>
+        <p>😘 💗</p>
+    </div>
+
+    <div class="balloon-progress">
+        <span id="balloonProgress">01 / 04</span>
+    </div>
+
+    <div class="balloon-stage" id="balloonStage">
+
+        <button id="activeBalloon" class="balloon" aria-label="Pop balloon">
+            <span class="balloon-body"></span>
+        </button>
+
+    </div>
+
+    <div class="message-box" id="messageBox">
+
+        <span class="message-decoration">♡</span>
+
+        <p id="balloonMessage"></p>
+
+        <button id="nextBalloonBtn">
+            Next  →
+        </button>
+
+    </div>
+
+    <p class="balloon-footer">Made by mee, while thinking of you ♡</p>
+
+    <button id="nextScreen" class="next-btn hidden">
+        more😘💗
+    </button>
+
+</section>
+
+<!-- BALLOON SCREEN CONTINUE BUTTON -->
+<button id="nextScreen" class="hidden">
+    Continue 💗
+</button>
+
+<!-- FLOWER GAME INTRO -->
+<section id="gameIntroScreen" class="flower-screen hidden">
+    <div class="flower-intro-card">
+        <div class="flower-decor">🌷 🌸 🌼</div>
+        <p class="flower-label">A LITTLE SURPRISE</p>
+        <h1>Let's Play a Little Game!</h1>
+        <p>
+            I've got a little challenge for you.
+            Collect as many beautiful flowers as you can!
+        </p>
+        <button id="playGameBtn">Let's Play 🌸</button>
+    </div>
+</section>
+
+<!-- FLOWER GAME -->
+<section id="flowerGameScreen" class="flower-screen hidden">
+
+    <div class="flower-game-header">
+        <p class="flower-label">MADE WITH keyboards</p>
+        <h1>Collect  Flowers 💐</h1>
+
+        <div class="flower-stats">
+            <div>🌸 <span id="flowerScore">0</span></div>
+            <div>⏱️ <span id="flowerTimer">60</span>s</div>
+        </div>
+    </div>
+
+    <div id="flowerGameArea">
+
+        <p class="flower-instruction">
+            Move the basket to catch the falling flowers!
+        </p>
+
+        <div id="flowerBasket">🧺</div>
+
+        <!-- RESULT -->
+        <div id="bouquetResult" class="hidden">
+           <div class="bouquet-image">
+    <img src="pngtree-a-beautiful-bouquet-of-mixed-flowers-including-roses-peonies-hydrangeas-and-png-image_19526572.webp" alt="A beautiful bouquet of flowers">
+</div>
+            <h2>Your Bouquet!</h2>
+            <p id="bouquetScore"></p>
+            <p class="bouquet-message">
+                A  bouquet for my  beautiful cutie. ❤️
+            </p>
+
+            <div class="bouquet-buttons">
+                <button id="retryFlowerGame">↻ Retry</button>
+                <button id="continueFlowerGame">Next </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- LOVE LETTER SCREEN -->
+<section id="letterScreen" class="letter-screen hidden">
+
+    <div class="letter-container">
+
+        <div class="letter-top-decoration">♡ ✿ ♡</div>
+
+        <p class="letter-subtitle">happy birthday darling</p>
+
+        <h1>nothing new, you know everyting already</h1>
+
+        <div class="letter-paper">
+
+            <div class="letter-date">muaah</div>
+
+            <textarea
+                id="loveLetterText"
+                placeholder="My beautiful baby
+
+i love you sooo muchh . you makes my everyday feel special n good , i hope im making you feel same you. happy birthday darlinggg , i wish you stay happy all your lifeee . you are best human i met 
+take care darlingg , i will take when we together.  
+
+With all my heart and mind, ❤️"
+                spellcheck="false"
+            ></textarea>
+
+            <div class="letter-signature">
+                With love, forever💗
+            </div>
+
+        </div>
+
+        <p class="letter-footer">
+            you aree soooo cute n sweetest , i cant explain how muchh you are.
+        </p>
+
+        <button id="letterNextBtn">nextt</button>
+
+    </div>
+<button id="letterNextBtn">
+    One More Surprise ✨
+</button>
+</section>
+
+<!-- THE FINAL BIRTHDAY CELEBRATION -->
+<section id="finalScreen" class="final-screen hidden">
+
+    <div class="birthday-confetti" aria-hidden="true">
+        <span>✦</span><span>♡</span><span>✧</span>
+        <span>✦</span><span>♡</span><span>✧</span>
+        <span>✦</span><span>♡</span><span>✧</span>
+        <span>✦</span><span>♡</span><span>✧</span>
+        <span>✦</span><span>♡</span><span>✧</span>
+    </div>
+
+    <div class="birthday-finale-card">
+
+        
+
+        <div class="birthday-crown">🥰💗</div>
+
+        <p class="birthday-small-heading">
+        happiest birthday darlingg
+        </p>
+
+        <h1 class="birthday-main-title">
+            HAPPY<br>
+            <span>BIRTHDAY!</span>
+        </h1>
+
+        <div class="birthday-cake">🎂</div>
+
+        <div class="birthday-separator">
+            <span></span> ♡ <span></span>
+        </div>
+
+        <h2 class="birthday-wish-title">
+        i love you soooo muchhh
+        </h2>
+
+      
+
+       
+
+        <div class="birthday-bottom-hearts">
+            ♡ &nbsp; ♥ &nbsp; ♡
+        </div>
+
+        <p class="birthday-signature">
+            Made by your love
+        </p>
+
+        <button id="replayBirthdayBtn" class="birthday-replay">
+            ↺
+        </button>
+
+    </div>
+
+</section>
+
+    </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
